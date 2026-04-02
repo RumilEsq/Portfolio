@@ -1,6 +1,3 @@
-/* ══════════════════════════════════════
-   CUSTOM CURSOR
-══════════════════════════════════════ */
 const dot     = document.getElementById('cursor-dot');
 const outline = document.getElementById('cursor-outline');
 
@@ -20,7 +17,6 @@ document.addEventListener('mousemove', e => {
   requestAnimationFrame(animOutline);
 })();
 
-/* Expand cursor on interactive elements */
 const interactives = 'a, button, .project-row, .skill-item, .cta-primary, .cta-link';
 document.querySelectorAll(interactives).forEach(el => {
   el.addEventListener('mouseenter', () => {
@@ -35,18 +31,12 @@ document.querySelectorAll(interactives).forEach(el => {
   });
 });
 
-/* ══════════════════════════════════════
-   NAV SCROLL STATE
-══════════════════════════════════════ */
 const nav = document.getElementById('nav');
 
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 60);
 }, { passive: true });
 
-/* ══════════════════════════════════════
-   SCROLL REVEAL
-══════════════════════════════════════ */
 const revealObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -61,9 +51,6 @@ const revealObserver = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-/* ══════════════════════════════════════
-   ACTIVE NAV LINK ON SCROLL
-══════════════════════════════════════ */
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-center a');
 
