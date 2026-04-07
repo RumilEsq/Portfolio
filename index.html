@@ -5,107 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rumil Edward Esquillo - Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div id="cursor-dot"></div>
-  <div id="cursor-outline"></div>
-
-  <nav id="nav">
-    <a class="nav-mark" href="#hero">R</a>
-    <div class="nav-center">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <div class="nav-avail">
-      <span class="avail-dot"></span>
-      Available
+  <nav>
+    <div class="nav-container">
+      <div class="nav-logo">Rumil</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
   </nav>
 
   <section id="hero">
-    <div class="hero-eyebrow reveal-line">
-      <span>Web Developer</span>
-      <span class="divider">/</span>
-      <span>Philippines</span>
-      <span class="divider">/</span>
-      <span>Self-Taught</span>
-    </div>
-
-    <h1 class="hero-headline">
-      <span class="line-wrap"><span class="reveal-word">Building</span></span>
-      <span class="line-wrap italic-line"><span class="reveal-word delay-1">things that</span></span>
-      <span class="line-wrap"><span class="reveal-word delay-2">actually work.</span></span>
-    </h1>
-
-    <div class="hero-bottom">
-      <p class="hero-sub reveal-fade delay-3">
-        Python - Flask - JavaScript - HTML & CSS<br>
-        I turn ideas into polished, functional products.
+    <div class="hero-container">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1>Rumil Edward Esquillo</h1>
+      <p class="hero-tagline">Web Developer from the Philippines 🇵🇭</p>
+      <p class="hero-desc">
+        I'm a self-taught developer who builds web apps using Python, Flask, and JavaScript.
+        I love turning ideas into real, working projects.
       </p>
-      <div class="hero-cta reveal-fade delay-4">
-        <a href="#projects" class="cta-primary">View my work</a>
-        <a href="#contact" class="cta-link"> Get in touch
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">See My Work</a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
+      </div>
+      <div class="hero-stack">
+        <span>Python</span>
+        <span>Flask</span>
+        <span>JavaScript</span>
+        <span>HTML & CSS</span>
+        <span>SQLite</span>
       </div>
     </div>
-
-    <div class="hero-index">01</div>
   </section>
 
-  <div class="marquee-wrap" aria-hidden="true">
-    <div class="marquee-track">
-      <span>Python</span><span class="sep">&mdash;</span>
-      <span>Flask</span><span class="sep">&mdash;</span>
-      <span>JavaScript</span><span class="sep">&mdash;</span>
-      <span>HTML &amp; CSS</span><span class="sep">&mdash;</span>
-      <span>REST APIs</span><span class="sep">&mdash;</span>
-      <span>SQLite</span><span class="sep">&mdash;</span>
-      <span>Git</span><span class="sep">&mdash;</span>
-      <span>PythonAnywhere</span><span class="sep">&mdash;</span>
-      <span>Python</span><span class="sep">&mdash;</span>
-      <span>Flask</span><span class="sep">&mdash;</span>
-      <span>JavaScript</span><span class="sep">&mdash;</span>
-      <span>HTML &amp; CSS</span><span class="sep">&mdash;</span>
-      <span>REST APIs</span><span class="sep">&mdash;</span>
-      <span>SQLite</span><span class="sep">&mdash;</span>
-      <span>Git</span><span class="sep">&mdash;</span>
-      <span>PythonAnywhere</span><span class="sep">&mdash;</span>
-    </div>
-  </div>
-
   <section id="about">
-    <div class="section-header">
-      <span class="section-num">02</span>
-      <span class="section-tag">About</span>
-    </div>
-    <div class="about-grid">
-      <div class="about-left">
-        <h2 class="about-headline reveal">
-          I write code.<br>
-          <em>I solve problems.</em>
-        </h2>
-      </div>
-      <div class="about-right reveal delay-1">
-        <p>I'm a <strong>self-taught web developer</strong> based in the Philippines. I started learning to code out of curiosity and turned it into a craft — building full-stack web apps that people actually use.</p>
-        <p>I specialize in <strong>Python/Flask back-ends</strong> and clean, modern <strong>JavaScript front-ends</strong>. Fast learner, detail-oriented, and I care about quality over shortcuts.</p>
-        <p>Currently building my portfolio and open to <strong>freelance work</strong> — from small landing pages to complete web applications.</p>
+    <div class="section-container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a <strong>self-taught web developer</strong> based in the Philippines. I started learning to code out of pure curiosity
+            and haven't stopped since. I enjoy building things that are actually useful.
+          </p>
+          <p>
+            I mainly work with <strong>Python and Flask</strong> for back-end stuff, and <strong>HTML, CSS, and JavaScript</strong> for the front-end.
+            I'm always learning new things and improving my skills every day.
+          </p>
+          <p>
+            I'm currently building my portfolio and looking for <strong>freelance work</strong>. If you have a project in mind, let's talk!
+          </p>
+        </div>
         <div class="about-stats">
-          <div class="stat-item">
-            <div class="stat-num">7+</div>
-            <div class="stat-desc">Projects built</div>
+          <div class="stat-box">
+            <div class="stat-number">6+</div>
+            <div class="stat-label">Projects Built</div>
           </div>
-          <div class="stat-item">
-            <div class="stat-num">2+</div>
-            <div class="stat-desc">Languages</div>
+          <div class="stat-box">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Languages</div>
           </div>
-          <div class="stat-item">
-            <div class="stat-num">100%</div>
-            <div class="stat-desc">Self-taught</div>
+          <div class="stat-box">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Self-Taught</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">Open</div>
+            <div class="stat-label">For Freelance</div>
           </div>
         </div>
       </div>
@@ -113,181 +84,113 @@
   </section>
 
   <section id="projects">
-    <div class="section-header">
-      <span class="section-num">03</span>
-      <span class="section-tag">Selected Work</span>
-    </div>
+    <div class="section-container">
+      <h2 class="section-title">My Projects</h2>
+      <p class="section-sub">Here are some of the things I've built so far.</p>
 
-    <div class="projects-list">
+      <div class="projects-grid">
 
-      <div class="project-row reveal" data-num="01">
-        <div class="proj-meta">
-          <span class="proj-num">01</span>
-          <div class="proj-tags-col">
-            <span class="proj-tag">Python</span>
-            <span class="proj-tag">Flask</span>
-            <span class="proj-tag">TMDB API</span>
+        <div class="project-card">
+          <div class="card-top">
+            <div class="card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">TMDB API</span>
+            </div>
+            <span class="badge-live">Live</span>
           </div>
-          <span class="proj-status live">Live</span>
+          <h3>MovieStreaming</h3>
+          <p>A full-stack movie and TV streaming web app. You can search for any title, browse trending content, and watch instantly. Flask handles the back-end and everything is connected to the TMDB API.</p>
+          <a href="https://kyrosski.pythonanywhere.com/" target="_blank" class="card-link">View Project →</a>
         </div>
-        <div class="proj-body">
-          <div class="proj-title-row">
-            <h3 class="proj-title">MovieStreaming</h3>
-            <a href="https://kyrosski.pythonanywhere.com/" class="proj-arrow">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-            </a>
+
+        <div class="project-card">
+          <div class="card-top">
+            <div class="card-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">OpenWeather API</span>
+              <span class="tag">Canvas</span>
+            </div>
+            <span class="badge-live">Live</span>
           </div>
-          <p class="proj-desc">A full-stack movie & TV streaming web app. Search any title, browse weekly trending content, and watch instantly. Flask powers the back-end, a custom cinematic interface on the front.</p>
+          <h3>Weather Cheaker</h3>
+          <p>A real-time weather app where the whole UI changes based on the current weather. It shows rain, snow, and clear sky animations. Includes hourly and 5-day forecasts.</p>
+          <a href="https://weather-app-chi-blond.vercel.app/" target="_blank" class="card-link">View Project →</a>
         </div>
+
+        <div class="project-card wip">
+          <div class="card-top">
+            <div class="card-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">TMDB API</span>
+            </div>
+            <span class="badge-wip">In Progress</span>
+          </div>
+          <h3>Movie Hub</h3>
+          <p>A movie discovery site where you can browse by genre, read info about movies, and watch trailers. Powered by the TMDB API.</p>
+          <span class="card-link-disabled">Coming Soon</span>
+        </div>
+
+        <div class="project-card wip">
+          <div class="card-top">
+            <div class="card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">Chart.js</span>
+            </div>
+            <span class="badge-wip">In Progress</span>
+          </div>
+          <h3>Ledger</h3>
+          <p>A personal finance tracker where you can log expenses, see them sorted by category, and view monthly charts. Built with Flask and SQLite.</p>
+          <span class="card-link-disabled">Coming Soon</span>
+        </div>
+
+        <div class="project-card wip">
+          <div class="card-top">
+            <div class="card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">SQLite</span>
+            </div>
+            <span class="badge-wip">In Progress</span>
+          </div>
+          <h3>Shrink</h3>
+          <p>A URL shortener with custom slugs and click tracking. You can manage all your links from a simple dashboard.</p>
+          <span class="card-link-disabled">Coming Soon</span>
+        </div>
+
+        <div class="project-card wip">
+          <div class="card-top">
+            <div class="card-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Canvas API</span>
+            </div>
+            <span class="badge-wip">In Progress</span>
+          </div>
+          <h3>JS Game</h3>
+          <p>A browser game built with pure vanilla JavaScript and the Canvas API. No libraries, no frameworks — just code from scratch.</p>
+          <span class="card-link-disabled">Coming Soon</span>
+        </div>
+
       </div>
-
-      <div class="project-row reveal delay-1" data-num="02">
-        <div class="proj-meta">
-          <span class="proj-num">02</span>
-          <div class="proj-tags-col">
-            <span class="proj-tag">JavaScript</span>
-            <span class="proj-tag">OpenWeather API</span>
-            <span class="proj-tag">Canvas</span>
-          </div>
-          <span class="proj-status live">Live</span>
-        </div>
-        <div class="proj-body">
-          <div class="proj-title-row">
-            <h3 class="proj-title">Weather Cheaker</h3>
-            <a href="https://weather-app-chi-blond.vercel.app/" class="proj-arrow">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-            </a>
-          </div>
-          <p class="proj-desc">A real-time weather dashboard where the entire UI transforms based on weather conditions. Rain, snow, clear skies, and night atmospheres rendered in real time. Hourly and 5-day forecasts with professional SVG iconography.</p>
-        </div>
-      </div>
-
-      <div class="project-row reveal delay-2 wip" data-num="03">
-        <div class="proj-meta">
-          <span class="proj-num">03</span>
-          <div class="proj-tags-col">
-            <span class="proj-tag">JavaScript</span>
-            <span class="proj-tag">PDF.js</span>
-            <span class="proj-tag">File API</span>
-          </div>
-          <span class="proj-status">In Progress</span>
-        </div>
-        <div class="proj-body">
-          <div class="proj-title-row">
-            <h3 class="proj-title">FileForge</h3>
-          </div>
-          <p class="proj-desc">All-in-one browser-based file converter. PDF to Word, PDF to JPG, image resizer, and more — no server uploads required. Everything runs client-side.</p>
-        </div>
-      </div>
-
-      <div class="project-row reveal delay-1 wip" data-num="04">
-        <div class="proj-meta">
-          <span class="proj-num">04</span>
-          <div class="proj-tags-col">
-            <span class="proj-tag">JavaScript</span>
-            <span class="proj-tag">TMDB API</span>
-            <span class="proj-tag">Flask</span>
-          </div>
-          <span class="proj-status">In Progress</span>
-        </div>
-        <div class="proj-body">
-          <div class="proj-title-row">
-            <h3 class="proj-title">Movie Hub</h3>
-          </div>
-          <p class="proj-desc">A movie discovery and ratings site powered by the TMDB API. Browse by genre, read detailed information, watch trailers, and find your next film.</p>
-        </div>
-      </div>
-
-      <div class="project-row reveal delay-2 wip" data-num="05">
-        <div class="proj-meta">
-          <span class="proj-num">05</span>
-          <div class="proj-tags-col">
-            <span class="proj-tag">Python</span>
-            <span class="proj-tag">Flask</span>
-            <span class="proj-tag">Chart.js</span>
-          </div>
-          <span class="proj-status">In Progress</span>
-        </div>
-        <div class="proj-body">
-          <div class="proj-title-row">
-            <h3 class="proj-title">Ledger</h3>
-          </div>
-          <p class="proj-desc">Personal finance tracker with expense categories, monthly charts, and summaries. Flask back-end with SQLite database and a clean dashboard UI.</p>
-        </div>
-      </div>
-
-      <div class="project-row reveal delay-1 wip" data-num="06">
-        <div class="proj-meta">
-          <span class="proj-num">06</span>
-          <div class="proj-tags-col">
-            <span class="proj-tag">Python</span>
-            <span class="proj-tag">Flask</span>
-            <span class="proj-tag">SQLite</span>
-          </div>
-          <span class="proj-status">In Progress</span>
-        </div>
-        <div class="proj-body">
-          <div class="proj-title-row">
-            <h3 class="proj-title">Shrink</h3>
-          </div>
-          <p class="proj-desc">Clean URL shortener with custom slugs, click analytics, and a management dashboard. Simple, fast, and monetizable.</p>
-        </div>
-      </div>
-
-      <div class="project-row reveal delay-2 wip" data-num="07">
-        <div class="proj-meta">
-          <span class="proj-num">07</span>
-          <div class="proj-tags-col">
-            <span class="proj-tag">JavaScript</span>
-            <span class="proj-tag">Canvas API</span>
-          </div>
-          <span class="proj-status">In Progress</span>
-        </div>
-        <div class="proj-body">
-          <div class="proj-title-row">
-            <h3 class="proj-title">JS Game</h3>
-          </div>
-          <p class="proj-desc">A browser-based game built in pure vanilla JavaScript using the Canvas API. No frameworks — just creative programming from scratch.</p>
-        </div>
-      </div>
-
     </div>
   </section>
 
   <section id="contact">
-    <div class="section-header">
-      <span class="section-num">04</span>
-      <span class="section-tag">Contact</span>
-    </div>
-    <div class="contact-inner">
-      <h2 class="contact-headline reveal">
-        Have a project?<br>
-        <em>Let's talk.</em>
-      </h2>
-      <p class="contact-sub reveal delay-1">
-        I'm open to work, and interesting projects.<br>
-      </p>
-      <div class="contact-actions reveal delay-2">
-        <a href="mailto: rumilesquillo9@gmail.com" class="cta-primary">Send me an email</a>
-        <a href="https://upwork.com" target="_blank" class="cta-link">
-          Upwork
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-        </a>
-        <a href="https://github.com/RumilEsq" target="_blank" class="cta-link">
-          GitHub
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-        </a>
-         <a href="https://web.facebook.com/rumilesq09" target="_blank" class="cta-link">
-          Facebook
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-        </a>
+    <div class="section-container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-sub">I'm open to freelance work and cool projects. Feel free to reach out!</p>
+      <div class="contact-links">
+        <a href="mailto:rumilesquillo9@gmail.com" class="btn-primary">Send an Email</a>
+        <a href="https://upwork.com" target="_blank" class="btn-outline">Upwork ↗</a>
+        <a href="https://github.com/RumilEsq" target="_blank" class="btn-outline">GitHub ↗</a>
+        <a href="https://web.facebook.com/rumilesq09" target="_blank" class="btn-outline">Facebook ↗</a>
       </div>
     </div>
   </section>
 
   <footer>
-    <span class="footer-mark">R</span>
-    <span>Rumil Edward Esquillo &copy; 2025</span>
+    <p>Built by Rumil Edward Esquillo &copy; 2025</p>
   </footer>
 
   <script src="script.js"></script>
